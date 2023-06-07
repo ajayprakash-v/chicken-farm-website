@@ -1,0 +1,560 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#contact{
+	margin-left: 20vw;
+	border: 1px solid;
+	border-radius: 27% 73% 39% 61% / 71% 52% 48% 29% ;
+	animation: b 4s ease-in-out infinite;
+}
+@keyframes b{
+	0%{
+		border-radius: 27% 73% 39% 61% / 71% 52% 48% 29% ;
+	}
+	50%{
+		border-radius: 79% 21% 84% 16% / 71% 52% 48% 29%  ;
+	}
+	100%{
+		border-radius: 27% 73% 39% 61% / 71% 52% 48% 29% ;
+	}
+}
+#flower{
+	width:5vw;
+	position: absolute;
+	z-index: 1;
+	right: 30vw;
+	rotate: 35deg;
+	animation: flower 10s infinite ease-in-out  ;
+}
+@keyframes flower{
+	0%{
+		transform: translateY(0px);
+	}
+	25%{
+		transform: translateY(10px);
+		rotate: -10deg;	
+	}
+	50%{
+		transform: translateY(0px);	
+	}
+	75%{
+		transform: translateY(10px);
+		rotate: 10deg;	
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+@font-face{
+	src: url('f1.ttf');
+	font-family: f1;
+}
+@font-face{
+	src: url('f2.otf');
+	font-family: f2;
+}
+@font-face{
+	src: url('f3.ttf');
+	font-family: f3;
+}
+#sec1{
+	margin-top: 8vw;
+	display: flex;
+}
+#sec1 h3{
+	font-family: f2;
+	font-size: 4vw;
+}
+#sec1 h1{
+	font-family: f1;
+	font-size: 13vw;
+	color: #5E9A76;
+}
+#sec1 p{
+	width: 35vw;
+	font-size: 1vw;
+	margin-bottom: 3vw;
+}
+#sec1 a{
+	font-size: .9vw;
+	background-color:#FBB117;
+	padding: 8px 30px 8px 30px;
+	text-decoration: none;
+	color: white;
+	border-radius: 51% 49% 83% 17% / 59% 43% 57% 41% ;
+}
+#sec1{
+	position: relative;
+	height: 33.5vw;
+	max-height: 33.5vw;
+	width: 100%;
+	overflow: hidden;
+}
+#chiborder{
+	width: 35vw;
+	height: 25vw;
+	background-color: #FDEFCC;
+	border-top-left-radius: 30%;
+	border-top-right-radius: 60%;
+	border-bottom-left-radius: 30%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#chicken img{
+	position: absolute;
+	width: 35vw;
+	bottom: 0;
+	right: 0;
+}
+#spoon{
+	position: absolute;
+	width: 3.5vw;
+	left: 20vw;
+	bottom: 3vw;
+	scale: -1;
+	rotate: 90deg;
+	animation: flower 10s infinite ease-in-out ;
+}
+#feather1{
+	animation: feather 6s infinite linear;
+}
+#feather2{
+	animation: feather 4s infinite linear;	
+	animation-delay: 3s;
+}
+@keyframes feather{
+	0%{
+		transform: translateY(0px);
+	}
+	25%{
+		transform: translateY(-10px);	
+	}
+	50%{
+		transform: translateY(0px);	
+	}
+	75%{
+		transform: translateY(10px);	
+	}
+	100%{
+		transform: translateY(0px);
+		trans
+	}	
+}
+
+#sec2{
+	width: 100%;
+	height: 45.5vw;
+	background-color: white;
+}
+#farmsec{
+	display: flex;
+	justify-content: space-around;
+}
+#farm{
+	width: 30vw;
+	background-color:;
+}
+#farmsec p{
+	width: 30vw;
+	font-size: 2vw;
+	margin-bottom: 3vw;
+}
+#farmsec h1{
+	font-family: f3;
+	font-weight:bold;
+	font-size: 7vw;
+	opacity: .9;
+
+}
+#farmsec span{
+	color: #5E9A76;
+}
+#farmsec a{
+	font-size: 2vw;
+	background-color:#FBB117;
+	padding: 12px 30px 12px 30px;
+	text-decoration: none;
+	color: white;
+	border-radius: 54% 46% 54% 46% / 41% 65% 35% 59%  ;
+}
+#farmsec{
+	margin-top: 2vw;
+}
+#farmimg{
+	display: flex;
+	position: relative;
+}
+#lh{
+	position: absolute;
+	left:2.5vw;
+	width: 10vw;
+	animation: lh 10s infinite linear;
+}
+@keyframes lh{
+	to{
+		rotate: 360deg;
+	}
+}
+#sec2{
+	position: relative;
+}
+#cloud2{
+	position: absolute;
+	bottom: 0vw;
+	scale: -1;
+	rotate: 180deg;
+	width: 50vw;
+	animation: cloud 10s linear infinite;
+	animation-delay: 2s;
+}
+#cloud{
+	width: 20vw;
+	position: relative;
+	z-index: 1;
+	animation: cloud 30s linear infinite;
+}
+#cloud3{
+	width: 10vw;
+	position: absolute;
+	top: 30vw;
+	animation: cloud 30s linear infinite;
+}
+#bird{
+	position: absolute;
+	width: 10vw;
+	top: 3vw;
+	left: 10vw;
+	z-index: 1;
+	animation: bird 30s linear infinite;
+}
+@keyframes bird{
+	0%{
+		transform: translateX(0);
+	}
+	50%{
+		transform: translateY(-50px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+@keyframes cloud{
+	0%{
+		transform: translateX(0);
+	}
+	50%{
+		transform: translateY(50px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
+#sec3{
+	width: 100%;
+	max-width: 100%;
+	height: 45.5vw;
+	max-height: 45.5vw;
+	overflow: hidden;
+	text-align: center;
+}
+#sec3 h1{
+	color: #f68f5c;
+	font-family: f3;
+	margin-top: 4vw;
+	font-size: 5vw;
+	font-weight: bold;
+}
+#sec3 span{
+	color: black;
+}
+#sec3 p{
+	font-size: 1.5vw;
+}
+#boxes{
+	display: flex;
+	width: 100%;
+	height: 30vw;
+	align-items: center;
+	justify-content: space-around;
+}
+#box1,#box2,#box3{
+	background-color: white;
+	width: 22vw;
+	height: 10vw;
+	position: relative;
+	border-radius: 10px;
+	text-align: start;
+	box-shadow: 5px 5px 10px;
+}
+#boxes img{
+	width: 5vw;
+	position: absolute;
+	left: -2vw;
+	top: -2vw;
+	object-fit: cover;
+	animation: rotate 1s infinite;
+}
+#boxes p{
+	font-size: 1vw;
+}
+#boxes h6{
+	font-size: 2vw;
+	font-weight: bold;
+}
+#boxtext{
+	padding: 0px 7vw 0px 7vw;
+	margin-top: 2vw;
+}
+#object1{
+	position: absolute;
+	width: 2vw;
+	height: 2vw;
+	background-color: orange;
+	top: 0;
+	right:0;
+	border-bottom-left-radius: 50%;
+}
+#object2{
+	position: absolute;
+	width: 5vw;
+	height: 5vw;
+	background-color: skyblue;
+	bottom: 0;
+	right:0;
+	border-bottom-left-radius: 30%;
+	border-top-left-radius: 80%;
+}
+#object3{
+	position: absolute;
+	width: 3vw;
+	height: 3vw;
+	background-color: green;
+	bottom: 0;
+	left:0;
+	border-bottom-right-radius: 30%;
+	border-top-right-radius: 80%;
+}
+#sec3{
+	position: relative;
+}
+#object5{
+	position: absolute;
+	width: 40vw;
+	height: 40vw;
+	background-color: orange;
+	border-radius: 30% 70% 70% 30% / 30% 29% 71% 70% ;
+	right: -20vw;
+	top: -10vw;
+}
+#object6{
+	position: absolute;
+	width: 40vw;
+	height: 40vw;
+	background-color: skyblue;
+	border-radius: 91% 9% 66% 34% / 17% 63% 37% 83%  ;
+	left: -20vw;
+	bottom: -10vw;
+	rotate: -50deg;
+}
+@keyframes rotate{
+	0%{
+		rotate: 0deg;
+	}
+	50%{
+		rotate: 10deg;	
+	}
+	100%{
+		rotate: 0deg;
+	}
+}
+#sec5{
+	max-width: 100%;
+	overflow: hidden;
+	height: 45.5vw;
+}
+#sec5 h1{
+	font-size:5vw ;
+	color: orange;
+	font-family: f3;
+	font-weight: bold;
+	position: absolute;
+	transform: translateX(60vw);
+}
+#sec5 span{
+	color: black;
+}
+#sec5{
+	position: relative;
+}
+#fabox1{
+	position: absolute;
+	top: 10vw;
+	width: 25vw;
+	max-width: inherit;
+	height: 15vw;
+	max-height: inherit;
+	overflow: hidden;
+	background-color: black;
+	border-radius: 30px;
+	margin: 10px;
+}
+#fabox2{
+	position: absolute;
+	top: 27vw;
+	left: 20vw;
+	width: 15vw;
+	max-width: inherit;
+	height: 10vw;
+	max-height: inherit;
+	overflow: hidden;
+	background-color: black;
+	border-radius: 30px;
+	margin: 10px;
+}
+#fabox3{
+	position: absolute;
+	top: 15vw;
+	left: 40vw;
+	width: 17vw;
+	max-width: inherit;
+	height: 25vw;
+	max-height: inherit;
+	overflow: hidden;
+	background-color: black;
+	border-radius: 30px;
+	margin: 10px;
+}
+#fabox4{
+	position: absolute;
+	top: 15vw;
+	left: 60vw;
+	width: 12vw;
+	max-width: inherit;
+	height: 16vw;
+	max-height: inherit;
+	overflow: hidden;
+	background-color: black;
+	border-radius: 30px;
+}
+#sec5 img{
+	width: 120%;
+}
+#fa4{
+	width: 150%;
+	height: 17vw;
+}
+#fa3{
+	width: 150%;
+	height: 25vw;
+}
+#sec6{
+	min-width: 100%;
+	overflow: hidden;
+	height: 45.5vw;
+	text-align: center;
+}
+#sec6 h1{
+	color: green;
+	font-size: 5vw;
+}
+#sec6 span{
+	color: black;
+}
+#map{
+	width: 50vw;
+}
+.map{
+	position: relative;
+}
+.map img{
+	position: absolute;
+	width: 5vw;
+}
+#ma1{
+	top: 10vw;
+}
+#ma2{
+	top: 15vw;
+	left: 32vw;
+}
+#ma3{
+	top: 25vw;
+	left: 34vw;
+}
+#ma4{
+	top: 8vw;
+	left: 34vw;
+}
+
+#obj1{
+	position: absolute;
+	width: 50vw;
+	height: 50vw;
+	background-color: green;
+	opacity: .5;
+	border-radius:91% 9% 66% 34% / 17% 63% 37% 83% ;
+	right: -30vw;
+	top: -30vw;
+}
+#obj2{
+	position: absolute;
+	width: 50vw;
+	height: 50vw;
+	background-color: skyblue;
+	opacity: .5;
+	border-radius:91% 9% 66% 34% / 17% 63% 37% 83% ;
+	left: -40vw;
+	bottom: -60vw;
+	rotate: -30deg;
+}
+#sec7{
+	display: flex;
+	width: 100%;
+	height: 45.5vw;
+	align-items: center;
+	justify-content: space-around;
+}
+#sec7 h1{
+	color: green;
+	font-size: 5vw;
+}
+#sec7 span{
+	color: black;
+}
+#sec7 p{
+	font-size: 1vw;
+	margin-top: 3vw;
+}
+input{
+	border: .5px solid;
+	padding: 10px;
+	width: 30vw;
+}
+#sec7 a{
+	font-size: 1vw;
+	padding: 10px 20px 10px 20px;
+	background-color: orange;
+	border-radius: 58% 42% 53% 47% / 30% 41% 59% 70% ;
+	text-decoration: none;
+	color: white;
+}
+#sec7{
+	position: relative;
+}
+footer{
+	width: 100%;
+	background-color: orange;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	justify-content: space-evenly;
+}
+footer img{
+	width: 3vw;
+}
+#sec2{
+	opacity: 0;
+}
